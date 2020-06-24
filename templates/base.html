@@ -1,0 +1,28 @@
+<!-- Jon Compton
+     Springboard May 26 Cohort -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo"><i class="fas fa-chalkboard"> </i> survey plus</div>
+        </div>
+    </nav>
+    <section class="messages">
+        {% for msg in get_flashed_messages() %}
+        <p class="flash">{{msg}}</p>
+        {% endfor %}
+    </section>
+    {% block content %} {% endblock %}
+</body>
+</html>

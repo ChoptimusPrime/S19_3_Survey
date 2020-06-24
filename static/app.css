@@ -1,0 +1,108 @@
+/* Jon Compton
+   Sprinboard May 26 Cohort */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Russo One', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.navbar {
+    background-color: darkslategray;
+    width: 100%;
+    height: 60px;
+}
+
+.logo {
+    height: 100%;
+    width: 220px;
+    line-height: 60px;
+    box-sizing: border-box;
+    padding: 0 30px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: lowercase;
+}
+
+i {
+    padding-right: 8px;
+}
+
+.home-banner {
+    width: 100%;
+    min-height: 75%;
+    background: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80") no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.survey-form {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 14px;
+    width: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.intro-blurb {
+    color: white;
+    font-size: 24px;
+    padding: 24px;
+
+}
+
+.form-button {
+    padding: 6px 12px;
+    background-color: limegreen;
+    color: white;
+    height: 40px;
+    width: 120px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.container {
+    height: calc(100% - 60px);
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-container {
+    width: 30%;
+    background-color: bisque;
+    border: 2px solid grey;
+}
+
+.question-container p, .form-group {
+    padding: 12px;
+}
+
+.button-div {
+    text-align: center;
+}
+
+.finish {
+    padding: 20px;
+    text-align: center;
+}
+
+.messages {
+    background-color: red;
+    color: white;
+}

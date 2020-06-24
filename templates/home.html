@@ -1,0 +1,17 @@
+<!-- Jon Compton
+     Springboard May 26 Cohort -->
+{% extends 'base.html' %}
+
+{% block content%}
+<div class="home-banner">
+    <div class="survey-form">
+        <div class="intro-blurb">
+            <p>Welcome to our survey site!  Please take a moment to fill out our {{ title }}!</p>
+            <form action="/start" method="POST">
+                <button class="form-button">START SURVEY</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

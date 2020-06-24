@@ -1,0 +1,26 @@
+<!-- Jon Compton
+     Springboard May 26 Cohort -->
+{% extends 'base.html'%}
+
+{% block content %}
+    <div class="container">
+        <div class="question-container">
+            <p>{{ question }}</p>
+            <form action="/submit" method="POST">
+            {% for choice in choices %}
+            <div class="form-group">
+                
+                <label for="">
+                    <input type="radio" name="question-choice" value="{{choice}}">{{choice}}
+                </label>
+            </div>
+                {% endfor %}
+            <div class="button-div">
+                <button class="form-button">Submit</button>
+            </div>
+            </form>
+            
+            
+        </div>
+    </div>
+{% endblock%}
