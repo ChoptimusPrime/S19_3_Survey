@@ -1,3 +1,6 @@
+# Jon Compton
+# Springboard May 26 Cohort
+
 from flask import Flask, request, render_template, session, redirect, flash
 from flask_debugtoolbar import DebugToolbarExtension
 from random import randint, sample
